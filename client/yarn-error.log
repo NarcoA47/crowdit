@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/apple/.npm/_npx/8d2f9c029655e602/node_modules/.bin:/Users/apple/Desktop/Applications/stack/client/node_modules/.bin:/Users/apple/Desktop/Applications/stack/node_modules/.bin:/Users/apple/Desktop/Applications/node_modules/.bin:/Users/apple/Desktop/node_modules/.bin:/Users/apple/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:108:26)
+
+npm manifest: 
+  {
+    "name": "client",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "deploy": "yarn build && npx thirdweb@latest upload dist"
+    },
+    "dependencies": {
+      "@thirdweb-dev/react": "^3",
+      "@thirdweb-dev/sdk": "^3",
+      "ethers": "^5",
+      "react": "^18.2",
+      "react-dom": "^18.2"
+    },
+    "devDependencies": {
+      "@vitejs/plugin-react": "^2",
+      "vite": "^3",
+      "vite-plugin-node-polyfills": "^0.7.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
